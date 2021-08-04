@@ -1,7 +1,7 @@
-"""Application entry point."""
-from flask_blueprint_tutorial import init_app
+"""App entry point."""
+from Project4 import create_app
 
-app = init_app()
+app = create_app()
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0")
+    app.run(host="0.0.0.0", port=5000)
